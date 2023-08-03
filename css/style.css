@@ -1,0 +1,53 @@
+/* Estilos gerais */
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover{
+    opacity: 1;
+}
+
+/* Header */
+header{
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+header img{width: 350px;}
+
+header nav ul{display: flex;}
+
+header li a{color: #8d7c5f;}
+
+header li a:hover{color: #783a32;}
+
+/* Episódios */
+.img1{
+    background-image: url('../img/the-walking-dead-s01e01-days-gone-bye-001.jpg');
+}
+
+.img2{
+    background-image: url('../img/the-walking-dead-s01e01-days-gone-bye-002.jpg');
+}
+
+.img3{
+    background-image: url('../img/the-walking-dead-s01e01-days-gone-bye-003.jpg');
+}
+
+.img4{
+    background-image: url('../img/the-walking-dead-s01e01-days-gone-bye-004.jpg');
+}
