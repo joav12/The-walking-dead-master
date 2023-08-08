@@ -1,4 +1,8 @@
 /* Estilos gerais */
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 ul{
     list-style: none;
 }
@@ -29,25 +33,198 @@ header{
 
 header img{width: 350px;}
 
-header nav ul{display: flex;}
+header nav ul{
+    display: flex;
+    gap: 5px;
+}
 
 header li a{color: #8d7c5f;}
-
 header li a:hover{color: #783a32;}
 
+header li {margin: 0 15px;}
+
+/* Temporada */
+.temporada{
+    background-image: url('../img/fundoTelaA.jpg');
+    background-size: cover;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.temporada h1{
+    font-size: 4.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.temporada p{
+    font-size: 2.0rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.btn{
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px 50px;
+    color: #191c03;
+    text-transform: uppercase;
+}
+
+.cinza{
+    background-color: #d1d1d1;
+}
+
+/* Mortes */
+.mortes, .contato{
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.mortes h3, .episodios h3, .contato h3{
+    font-size: 2rem;
+    color: #783a32;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.mortes p, .episodios p, .contato p{
+    color: #fff;
+    max-width: 800px;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.mortes hr, .episodios hr, .contato hr{
+    width: 200px;
+    height: 1px;
+    background-color: #fff;
+}
+
+.mortes .grid, .episodios .grid{
+    width: 100%;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.mortes .grid h4, .mortes .grid i{
+    color: gold;
+}
+
+.mortes li{
+    padding: 10px 30px;
+    transition: all ease-in-out 500ms;
+    border-radius: 15px;
+}
+
+.mortes li:hover{
+    transform: scale(1.1, 1.1);
+    background-color: #783a328a;
+    cursor: pointer;
+}
+
+.mortes .grid i{
+    font-size: 3.5rem;
+    margin-bottom: 25px;
+}
+
+.mortes .grid h4{
+    font-size: 2.0rem;
+    margin-bottom: 15px;
+}
+
 /* Episódios */
-.img1{
-    background-image: url('../img/the-walking-dead-s01e01-days-gone-bye-001.jpg');
+.episodios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
 }
 
-.img2{
-    background-image: url('../img/the-walking-dead-s01e01-days-gone-bye-002.jpg');
+.episodios h3{
+    color: #000;
 }
 
-.img3{
-    background-image: url('../img/the-walking-dead-s01e01-days-gone-bye-003.jpg');
+.episodios p{
+    color: #d1d1d1;
 }
 
-.img4{
-    background-image: url('../img/the-walking-dead-s01e01-days-gone-bye-004.jpg');
+.episodios hr{
+    color: #000;
+    background-color: #000;
+}
+
+.episodios .grid{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.episodios .grid li{
+    height: 350px;
+    padding: 5px;
+    background-size: cover;
+    background-position: center;
+    background-clip: content-box;
+}
+
+.episodios .img-small{
+    width: 196px;
+    flex-basis: 40%;
+}
+
+.episodios .img-large{
+    width: 400px;
+    flex-basis: 60%;
+}
+
+.episodios .img1{background-image: url('../img/the-walking-dead-s01e01-days-gone-bye-001.jpg');}
+
+.episodios .img2{background-image: url('../img/the-walking-dead-s01e01-days-gone-bye-002.jpg');}
+
+.episodios .img3{background-image: url('../img/the-walking-dead-s01e01-days-gone-bye-003.jpg');}
+
+.episodios .img4{background-image: url('../img/the-walking-dead-s01e01-days-gone-bye-004.jpg');}
+
+/* Contatos */
+.contato{color: white;}
+
+.contato form{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    min-width: 800px;
+}
+
+.contato input{
+    border-radius: 5px;
+    padding: 15px;
+    margin-right: 10px;
+    border: none;
+    width: 400px;
+}
+
+.contato button{
+    background-color: #783a32;
+    border: none;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    transition: all ease-in-out 200ms;
+}
+
+.contato button:hover{
+    background-color: #68322c;
+    cursor: pointer;
 }
