@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/9d3f35a449.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/spoiler.js"defer></script>
 </head>
 <body>
     <!-- Header -->
@@ -37,7 +39,13 @@
     </section>
 
     <!-- Mortes -->
-    <section class="mortes">
+    <div id="spoiler">
+        <h1>Essa seção contem spoilers!!!</h1>
+        <h1>Você <span>TEM CERTEZA</span> que quer continuar?</h1>
+        <button id="butao_spoiler">Continuar</button>
+    </div>  
+    
+    <section class="mortes">  
         <h3>Quem morreu</h3>
 
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt quae enim eos consequuntur exercitationem numquam sed, quo adipisci, vero quisquam tempore officiis eligendi. Explicabo quasi repellendus tenetur autem et beatae.</p>
